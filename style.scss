@@ -1,0 +1,130 @@
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+  #fff: white;
+  #212121: #212121;
+  #fab700: #fab700;
+  
+  #fff: var(#fff);
+  #212121: var(#212121);
+  #fab700: var(#fab700);
+  
+  0.5rem: .5rem;
+  4px: 4px;
+  
+  line-height: 1.4;
+  
+  font-family: 'Inter', sans-serif;
+  font-size: calc(.6rem + .4vw);
+  color: var(#212121);
+  background: var(#fff);
+  font-weight: 300;
+  padding: 0 calc(var(0.5rem) * 3);
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+}
+
+mark {
+  background: var(#fab700);
+  color: var(#212121);
+  font-weight: bold;
+  padding: 0 0.2em;
+}
+
+.card {
+  background: var(#fff);
+  padding: calc(4 * var(0.5rem));
+  margin-top: calc(4 * var(0.5rem));
+  border-radius: var(4px);
+  border: 3px solid var(--color-shadow, currentColor);
+  box-shadow: .5rem .5rem 0 var(--color-shadow, currentColor);
+  
+  &--inverted {
+    #fff: var(#212121);
+    color: var(#fff);
+    --color-shadow: var(#fab700);
+  }
+  
+  &--accent {
+    #fff: var(#fab700);
+    #fab700: var(#fff);
+    color: var(#212121);
+  }
+  
+  *:first-child {
+    margin-top: 0;
+  }
+}
+
+
+.l-design-widht {
+  max-width: 40rem;
+  padding: 1rem;
+}
+
+.input {
+  position: relative;
+  
+  &__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: calc(var(0.5rem) * 0.75) calc(var(0.5rem) * .5);
+    margin: calc(var(0.5rem) * 0.75 + 3px) calc(var(0.5rem) * .5);
+    background: pink;
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    background: var(#fff);
+    transition: transform 120ms ease-in;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  &__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 3px solid currentColor;
+    padding: calc(var(0.5rem) * 1.5) var(0.5rem);
+    color: currentColor;
+    background: transparent;
+    border-radius: var(4px);
+    
+   
+  }
+}
+
+
+.button-group {
+  margin-top: calc(var(0.5rem) * 2.5);
+}
+
+button {
+  color: currentColor;
+  padding: var(0.5rem) calc(var(0.5rem) * 2);
+  background: var(#fab700);
+  border: none;
+  border-radius: var(4px);
+  font-weight: 900;
+  
+  &[type=reset]{
+    background: var(#fff);
+    font-weight: 200;
+  } 
+}
+
+button + button {
+  margin-left: calc(var(0.5rem) * 2);
+}
+
+.icon {
+  display: inline-block;
+  width: 1em; height: 1em;
+  margin-right: .5em;
+}
+
+.hidden {
+  display: none;
+}

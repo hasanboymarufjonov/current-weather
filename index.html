@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="modal.css" />
+  </head>
+  <body>
+    <article class="l-design-widht">
+      <h1>Current Weather</h1>
+      <p>
+        Application is created for educational purposes. Used
+        <mark>OpenWeatherMap</mark> API
+      </p>
+
+      <div class="card">
+        <label class="input">
+          <input
+            class="input__field"
+            type="text"
+            placeholder="City name .. "
+            id="cityNameID"
+          />
+        </label>
+        <br />
+        <button onclick="myFunction()">Click</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-body">
+              <span class="close">&times;</span>
+
+              <p><mark>Name: </mark><span id="city-name">Tashkent</span></p>
+              <p>
+                <mark>Temperature: </mark> <span id="temp-degree">45</span> °C
+              </p>
+              <p><mark>Condition: </mark><span id="condition">Mist</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <script src="app.js"></script>
+    <script src="modal.js"></script>
+  </body>
+</html>
